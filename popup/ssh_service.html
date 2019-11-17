@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ssh_service.css" />
+    <link rel="stylesheet" href="node_modules/xterm/dist/xterm.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button id="openDevice"><p style="margin: 0px">...</p></button>
+    <div class="flex device" style="height: 0px">
+      <input id="ip" type="text" placeholder="device's ip" />
+      <input id="port" type="text" placeholder="port" />
+      <button id="connect">Connect</button>
+    </div>
+    <div class="storage">
+      <div id="spaceBack">
+        <div id="space"></div>
+        <h1 id="spaceAmount"></h1>
+      </div>
+    </div>
+    <div class="services"></div>
+    <div>
+      <button id="openNewService">...</button>
+      <div id="newServiceContainer" class="flex">
+        <input id="newServiceName" type="text" placeholder="service name" />
+        <button id="addNewService">Add</button>
+      </div>
+    </div>
+    <script src="./ssh_service.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+	"description": "SSH service manager",
+	"manifest_version": 2,
+	"name": "SSH-service",
+	"version": "1.1",
+	"permissions": ["contextMenus"],
+	"background": {
+		"scripts": ["background.js"]
+	},
+
+	"browser_action": {
+		"browser_style": true,
+		"default_popup": "popup/ssh_service.html",
+		"default_icon": {
+			"16": "icon/icon.png",
+			"32": "icon/icon.png"
+		}
+	}
+}
